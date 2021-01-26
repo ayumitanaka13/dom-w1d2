@@ -1,8 +1,9 @@
 const form = document.querySelector('#tweetForm');
+const btn = document.querySelector('button');
 // const nameInput = document.querySelector('#name');
 // const tweetInput = document.querySelector('#tweet');
 
-form.addEventListener('submit', function(e){
+btn.addEventListener('click', function(e){
     e.preventDefault();
 
     const ul = document.querySelector('ul');
