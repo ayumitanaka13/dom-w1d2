@@ -8,6 +8,6 @@ form.addEventListener('submit', function(e){
 
     const ul = document.querySelector('ul');
     const li = document.createElement('li');
-    li.innerHTML = "username: " + nameInput.value + "<br>" + "tweet: " + tweetInput.value;
+    li.innerHTML = "<b>" + nameInput.value + "</b>" + "-" + tweetInput.value;
     ul.appendChild(li);
 });
