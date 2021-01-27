@@ -1,7 +1,5 @@
 const form = document.querySelector('#tweetForm');
 const btn = document.querySelector('button');
-// const nameInput = document.querySelector('#name');
-// const tweetInput = document.querySelector('#tweet');
 
 btn.addEventListener('click', function(e){
     e.preventDefault();
@@ -11,3 +9,31 @@ btn.addEventListener('click', function(e){
     li.innerHTML = "<b>" + form.username.value + "</b>" + "-" + form.tweet.value;
     ul.appendChild(li);
 });
+
+
+
+// const tweetForm = document.querySelector('#tweetForm');
+// const tweetContainer = document.querySelector('#tweets');
+
+// tweetForm.addEventListener('submit', function(e){
+//     e.preventDefault();
+//     const userNameInput = tweetForm.elements.username;
+//     const tweetInput = tweetForm.elements.tweet;
+//     addTweet(userNameInput.value, tweetInput.value);
+//     userNameInput.value = '';
+//     tweetInput.value = '';
+// });
+
+// const addTweet = (username, tweet) => {
+//     const newTweet = document.createElement('li');
+//     const bTag = document.createElement('b');
+//     bTag.append(username);
+//     newTweet.append(bTag);
+//     newTweet.append(`- ${tweet}`);
+//     tweetContainer.appendChild(newTweet);
+// }
+
+// tweetContainer.addEventListener('click', function(e){
+//     console.dir(e.target);
+//     e.target.nodeName === 'LI' && e.target.remove();
+// })
